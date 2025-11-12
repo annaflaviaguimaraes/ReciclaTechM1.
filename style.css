@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -18,19 +19,37 @@ header nav {
   width: 35%;
   height: 10vh;
 }
-header a {
+header nav a {
   color: #4B5563;
   text-decoration: none;
   font-size: 1.5rem;
-  align-items: center;
 }
 
 .btnVerde {
-  background-color: #16A34A;
-  color: #FFFFFF;
+  background-color: #21C05C;
+  padding: 20px;
   border-radius: 6px;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  color: #ffffff;
+}
+
+.caixaLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.caixaLogo h1 {
+  color: #1f2937;
+  font-size: 2.5rem;
+}
+
+.apresentacao {
+  height: 50vh;
+  width: 50%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .produtosDisponiveis {
@@ -51,14 +70,26 @@ header a {
 .produtosDisponiveis article img {
   width: 100%;
 }
-
-.caixalogo {
-  display: flex;
-  justify-content: space-around;
-  width: 15%;
-  align-items: center;
+.produtosDisponiveis article p {
+  text-align: center;
+  border: solid;
+  width: 90%;
 }
-.caixalogo h1 {
-  color: #1F2937;
-  font-size: 2.5rem;
+.produtosDisponiveis article button {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 15vh;
+    flex-direction: column;
+  }
+  nav {
+    border: solid red;
+    width: 90%;
+  }
+  nav a {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
